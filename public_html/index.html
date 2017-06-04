@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Calculadora</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="js/operaciones.js"></script> 
+    </head>
+    <body>
+
+        <table border=5 bordercolor=gray  cellspacing=8>
+            <form name="cal">
+                <th>
+                    CALCULADORA
+                </th>
+                <tr align="center">
+                    <td>
+                        <label> Primer numero</label>
+                        <input type="number" name="numero1" id="numero1" value="" size="9">
+                        <label> Segundo numero</label>
+                        <input type="number" name="numero2" id="numero2" value="" size="9">
+                    </td></tr>
+                <tr align="center"><td>
+                        <label> Seleccione operacion</label>
+                         </td></tr>
+                <tr align="center"><td>
+                        <input type="Button" name="" value=" + " onclick="calcular('+')">
+                        <input type="Button" name="" value=" - " onclick="calcular('-')">
+                        <input type="Button" name="" value=" X " onclick="calcular('*')">
+                        <input type="Button" name="" value=" / " onclick="calcular('/')">
+                        <input type="Button" name="" value=" ^ " onclick="potencia()">
+                    </td></tr>
+                <tr align="center"><td>
+                        <label> Resultado</label>
+                         </td></tr>
+                <tr align="center"><td>
+                        <input type="Text" readonly="true" name="resultado" id="resultado" value="" size="12">
+                    </td>
+                </tr>
+            </form>
+        </table>
+
+    </body>
+</html>
